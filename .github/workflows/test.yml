@@ -25,7 +25,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: |
           echo "toto" > result.txt
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         with:
           name: my-result
           path: result.txt
